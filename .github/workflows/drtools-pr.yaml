@@ -23,7 +23,7 @@ jobs:
         id: extraction
         uses: lucasheim/dr-tools-data-extractor@main
         with:
-          projectPath: "./retrofit/.drtools"
+          basePath: "./retrofit/.drtools"
       - name: Delete old comments
         if: success() || failure()
         uses: izhangzhihao/delete-comment@master
